@@ -1,0 +1,70 @@
+.aside
+  background: #f6f6f6
+  box-shadow: 2px 2px 2px #afadad
+  height: 100%
+  position: fixed
+  top: 0
+  bottom: 0
+  width: 250px
+  z-index: 10
+  display: none
+  @include respond-to(md)
+    display: block
+  @include respond-to(lg)
+    width: 200px
+  &__top
+    height: 90px
+    display: flex
+    align-items: center
+    padding-left: 30px
+    border-bottom: 2px solid #e4e4e4
+    @include respond-to(lg)
+      height: 70px
+      padding-left: 30px
+    .title
+      color: #000
+  &__main
+    padding: 30px 20px 0 15px
+    @include respond-to(lg)
+      padding: 22px 15px 0 15px
+  &__menu
+    .item
+      width: 100%
+      font-size: 1.1em
+      margin-bottom: 8px
+      @include respond-to(lg)
+        font-size: 1em
+    .link
+      width: 100%
+      height: 50px
+      overflow: hidden
+      padding: 14px 10px 14px 27px
+      display: flex
+      align-items: center
+      background: transparent
+      box-shadow: 3px 3px 2px transparent
+      @include respond-to(lg)
+        padding: 14px 10px 14px 15px
+      .icon
+        margin-right: 15px
+        height: 100%
+        @include respond-to(lg)
+          margin-right: 8px
+      svg
+        height: 100%
+        width: auto
+      &:hover
+        background: #e41958
+        box-shadow: 3px 3px 2px #afadad
+        color: #fff
+        svg path
+          fill: #fff
+
+
+
+
+
+
+
+
+
